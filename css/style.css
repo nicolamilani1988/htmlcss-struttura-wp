@@ -4,32 +4,39 @@
   box-sizing: border-box;
 }
 
+/* regole generali */
 #container{
   width: 60%;
   margin: auto;
+  padding: 20px 0 20px;
   /* debug */
   /* height: 100vh; */
-  border: 2px solid black;
-  padding: 20px 0 20px;
+  /* border: 2px solid black; */
 }
 
-#container :first-child, #container :nth-child(2){
+#container > *{
+  width:100%;
+}
+
+header, .full-section{
   margin-bottom: 20px;
 }
 
+/* regole header */
 header{
   height: 15vh;
   background-color: #E579E6;
 }
 
+/* regole prima sezione */
 .full-section{
   height: 40vh;
   background-color: #E1D67A;
 }
 
+/* regole seconda sezione */
 .row{
-  width:100%;
-  background-color: blue;
+  background-color: #0086FF;
 }
 
 .row:after{
@@ -38,18 +45,18 @@ header{
   clear: both;
 }
 
-.row.head{
+.row-head{
   height: 10vh;
   background-color: #ABCFE7;
 }
 
 .float{
   float: left;
-  height: 40vh;
-  margin: 5% 0;
+  height: 50vh;
+  margin: 20px 0;
   background-color: #ABCFE7;
   /* debug */
-  border: 5px solid black;
+  /* border: 5px solid black; */
 }
 
 .first, .third{
@@ -57,14 +64,14 @@ header{
 }
 
 .second{
-  width: 50%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: calc( 60% - 40px);
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
+/* regole footer */
 footer{
   margin-top: 10px;
-  width:100%;
   height: 5vh;
-  background-color: purple;
+  background-color: #8801FE;
 }
