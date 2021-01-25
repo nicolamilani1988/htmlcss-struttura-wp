@@ -1,0 +1,64 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container{
+  width: 60%;
+  margin: auto;
+  /* debug */
+  /* height: 100vh; */
+  border: 2px solid black;
+  
+
+}
+
+.header{
+  height: 10vh;
+  background-color: pink;
+}
+
+.section.full{
+  height: 20vh;
+  background-color: yellow;
+}
+
+.row{
+  width:100%;
+  background-color: blue;
+}
+
+.row:after{
+  content:'';
+  display: table;
+  clear: both;
+}
+
+.row.head{
+  height: 5vh;
+  background-color: green;
+}
+
+.float{
+  border: 5px solid black;
+  float: left;
+  height: 40vh;
+  margin: 5% 0;
+}
+
+.first, .third{
+  width: 20%;
+}
+
+.second{
+  width: 50%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+footer{
+  width:100%;
+  height: 5vh;
+  background-color: purple;
+}
