@@ -18,7 +18,7 @@
   width:100%;
 }
 
-header, .full-section{
+header, section.full{
   margin-bottom: 20px;
 }
 
@@ -29,7 +29,7 @@ header{
 }
 
 /* regole prima sezione */
-.full-section{
+section.full{
   height: 40vh;
   background-color: #E1D67A;
 }
@@ -59,11 +59,11 @@ header{
   /* border: 5px solid black; */
 }
 
-.first, .third{
+.aside{
   width: 20%;
 }
 
-.second{
+.central{
   width: calc( 60% - 40px);
   margin-left: 20px;
   margin-right: 20px;
